@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sander.bylemans.organizer.NameWeekActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <EditText
+        android:id="@+id/BeginWeek"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/OK"
+        android:hint="@string/BeginWeek" />
+
+    <EditText
+        android:id="@+id/EndWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/OK"
+        android:hint="@string/EndWeek" />
+    
+    <TextView
+        android:id="@+id/Dash" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/OK"
+        android:text="@string/Dash"
+        android:textSize="48sp"
+        />   
+    <Button 
+        android:id="@+id/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OK"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EndWeek"/>
+        
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sander.bylemans.organizer"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="9" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sander.bylemans.organizer.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sander.bylemans.organizer.ViewWeeks"
+            android:label="@string/title_activity_view_weeks" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="sander.bylemans.organizer.NameWeekActivity"
+            android:label="@string/title_activity_name_week" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="sander.bylemans.organizer.WeekActivity"
+            android:label="@string/title_activity_week"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="sander.bylemans.organizer.SelectWeeks"
+            android:label="@string/title_activity_select_weeks" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="sander.bylemans.organizer.ShowSum"
+            android:label="@string/title_activity_show_sum"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
